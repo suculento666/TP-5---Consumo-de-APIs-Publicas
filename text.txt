@@ -1,0 +1,64 @@
+ Obtener un Pokémon por nombre. 
+Partiendo desde la url https://pokeapi.co/api/v2/ agregamos el endpoint “/pikachu” para probar. Este fue el resultado:{
+    "abilities": [
+        {
+            "ability": {
+                "name": "static",
+                "url": "https://pokeapi.co/api/v2/ability/9/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+
+
+Obtener un Pokémon por ID. 
+	Partiendo desde la url https://pokeapi.co/api/v2/ agregamos el endpoint “/62” para probar. Este fue el resultado:    "abilities": [
+        {
+            "ability": {
+                "name": "water-absorb",
+                "url": "https://pokeapi.co/api/v2/ability/11/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+
+Obtener una lista limitada de Pokémon. 
+Partiendo desde la url https://pokeapi.co/api/v2/ agregamos el endpoint “pokemon?limit=5” para probar. Este fue el resultado:  "count": 1350,
+    "next": "https://pokeapi.co/api/v2/pokemon?offset=5&limit=5",
+    "previous": null,
+    "results": [
+        {
+            "name": "bulbasaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/1/"
+        },
+        {
+            "name": "ivysaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/2/"
+        },
+        {
+            "name": "venusaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/3/"
+        },
+    ]
+}
+
+Obtener información de un tipo específico.
+ Partiendo desde la url https://pokeapi.co/api/v2/ agregamos el endpoint “/type/1” para probar. Este fue el resultado:
+{
+    "damage_relations": {
+        "double_damage_from": [
+            {
+                "name": "fighting",
+                "url": "https://pokeapi.co/api/v2/type/2/"
+            }
+        ],
+        "double_damage_to": [],
+        "half_damage_from": [],
+        "half_damage_to": [
+            {
+                "name": "rock",
+                "url": "https://pokeapi.co/api/v2/type/6/"
+            },
+Generar un error intencional (recurso inexistente). 
+
+Generamos la URL https:///xd la cual no corresponde a nigun programa, por lo tanto fallo. El error dice: "Invalid URL "https:///xd""
